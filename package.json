@@ -1,0 +1,17 @@
+{
+  "name": "info3d-sign-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "@tailwindcss/cli -i styles.css -o dist/output.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}

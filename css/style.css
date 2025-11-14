@@ -1,0 +1,54 @@
+body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+        /* Make the 3D canvas fill the whole page */
+        #three-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            outline: none;
+        }
+        /* Style for the title */
+        h1 {
+            position: fixed;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            pointer-events: none; /* Make text non-interactable */
+        }
+        
+        /* New styles for the modal positioning */
+        #info-modal {
+            position: fixed;
+            z-index: 50;
+            /* We'll set top/left with JS */
+            
+            /* Animation styles */
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            transform-origin: 0 100%; /* Animate from bottom-left */
+        }
+
+        #modal-content {
+             /* We keep all the Tailwind styles for the box itself */
+             /* The 'transform' classes are removed from the HTML */
+        }
+        
+        /* Loading spinner for Gemini API */
+        .loader {
+            border: 4px solid #f3f3f3; /* Light grey */
+            border-top: 4px solid #3b82f6; /* Blue */
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            margin: 1rem auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
